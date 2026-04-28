@@ -1,0 +1,28 @@
+
+
+/* 챗봇 아이콘 스타일 */
+.chatbot-icon {
+  position: fixed;        /* 스크롤을 내려도 항상 같은 위치에 고정 */
+  bottom: 50px;           /* 화면 아래에서 50px 띄움 */
+  right: 50px;            /* 화면 오른쪽에서 50px 띄움 */
+  width: 60px;            /* 아이콘 전체 크기 */
+  height: 60px;
+  background-color: #000000; 
+  border-radius: 50%;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out; /* 부드러운 애니메이션 효과 */
+  z-index: 1000;          /* 다른 화면 요소들보다 항상 위에 떠 있도록 설정 */
+}
+
+/* 마우스 올렸을 때 액션 */
+.chatbot-icon:hover {
+  transform: scale(1.1);  /* 마우스 올리면 크기가 10% 커짐 */
+}
+
+/* 안쪽 이미지 크기 조절 */
+.chatbot-icon img {
+  width: 40px;            /* 아이콘 이미지 크기 */
+  height: auto;
+}
